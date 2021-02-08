@@ -1,0 +1,13 @@
+
+<% if @include %>
+  <% if @english_word %>
+  <p> Congratulations <%= @word %> is an English Word </p>
+  <% else %>
+  <p>sorry </p>
+  <% end %>
+  <% else %>
+  <p>doesnt exist</p>
+  <% end %>
+
+  <%= link_to "play again", new_path %>
+
